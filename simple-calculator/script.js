@@ -226,7 +226,7 @@ document.addEventListener('keydown', (event) => {
     if (event.key === '9') nineButton.click();
     if (event.key === '0') zeroButton.click();
     if (event.key === '.') decimalButton.click();
-    if (event.key === 'Enter') equalsButton.click();
+    if (event.key === '=') equalsButton.click();
 });
 
 let intervalId = window.setInterval(function(){
