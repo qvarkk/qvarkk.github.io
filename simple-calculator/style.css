@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    --primary-light: #ededed;
+    --primary-dark: #333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-family: 'Roboto', sans-serif;
+    /* footer support */
+    margin-bottom: 100px;
+}
+
+/* header section */
+
+.header {
+    text-align: center;
+    padding: 30px;
+    font-size: 2em;
+}
+
+/* main section */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.calculator {
+    margin-top: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 600px;
+    border: 5px solid var(--primary-dark);
+}
+
+.screen {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 10px;
+    width: 86%;
+    height: 20%;
+    border: 5px solid var(--primary-dark);
+}
+
+#recent {
+    min-height: 1em;
+    font-size: 25px;
+}
+
+/* Makes element invisible in the start */
+.transparent {
+    opacity: 0;
+}
+
+#calculations {
+    min-height: 1em;
+    font-size: 55px;
+}
+
+.functional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    /* border: 5px solid var(--primary-dark); */
+}
+
+.clean {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.clean > button {
+    border: 5px solid var(--primary-dark);
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--primary-dark);
+    height: 90%;
+    width: 47.1%;
+    margin: 2px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 80%;
+    width: 100%;
+}
+
+.work > button {
+    border: 5px solid var(--primary-dark);
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--primary-dark);
+    height: 23%;
+    width: 23%;
+    margin: 2px;
+}
+
+
+/* footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}  
+
+.github {
+    color: var(--primary-dark);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
