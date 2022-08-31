@@ -15,6 +15,14 @@ body {
   margin: 0 auto;
 }
 
+.hero-skill-card {
+  max-width: 700px;
+  background-color: #c8c8c8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 .items-card {
   padding: 5px;
   display: flex;
@@ -25,6 +33,7 @@ body {
 
 .items-grid {
   max-width: 700px;
+  min-width: 600px;
   background-color: #c8c8c8;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -32,6 +41,8 @@ body {
 }
 
 .slot-text,
+.hero,
+.skill,
 .item {
   min-width: 250px;
   font-size: 1.75rem;
@@ -41,4 +52,11 @@ body {
 button {
   font-size: 1.5rem;
   padding: 10px;
+}
+
+@media(max-width: 768px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+    min-width: 250px;
+  }
 }
